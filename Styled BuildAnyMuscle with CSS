@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BuildAnyMuscle</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Blog Posts</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section>
+		<article></article>
+		<article></article>
+	</section>
+
+		<h1>BuildAnyMuscle</h1>
+		<hr>
+	<img src="BuildAnyMuscle.png" width ="250px;" >
+
+<p>Welcome to BuildAnyMuscle<br> Please Login to continue </p>
+<form>
+	<input type="username" name="user_name" placeholder="Enter Username"><br>
+	<input type="password" name="user_password" placeholder="Enter Password">
+</form>
+<p>This Website is founded by Vivek Showry, for Gymrats who are confused with the excercises they want to perform to improve that particular muscle group with Guidance via 2D pictures</p>
+<p>The list of Major Muscle Groups are</p>
+<ul>
+	<li>Chest Muscles</li>
+	<li>Back Muscles</li>
+	<li>Arm Muscles</li>
+	<li>Abdominal Muscles</li>
+	<li>Leg Muscles</li>
+
+</ul>
+
+<p>Chest Muscles</p>
+<img src="bench press 2.jpg" width ="150px;">
+<p>Bench Press and the Audio Tutorial to Perform</p>
+<audio controls>
+  <source src="Bench press audio.mp3" type="audio/mpeg">
+</audio>
+
+<p>Back Muscles</p>
+<img src="Seated Row.jpg" width ="150px;">
+<p>Seated Row and the Audio Tutorial to Perform</p>
+<audio controls>
+  <source src="Seated Row.mp3" type="audio/mpeg">
+</audio>
+
+<p>Arm Muscles</p>
+<img src="Dumbbell Curls.jpg" width ="150px;">
+<p>Dumbbell Curls and the Audio Tutorial to Perform</p>
+<audio controls>
+  <source src="Dumbbell Curl.mp3" type="audio/mpeg">
+</audio>
+
+<p>Abdominal Muscles</p>
+<img src="Abs Crunches.jpg" width ="150px;">
+<p>Abs Crunches and the Audio Tutorial to Perform</p>
+<audio controls>
+  <source src="Abs Crunches.mp3" type="audio/mpeg">
+</audio>
+
+<p>Leg Muscles</p>
+<img src="Leg Press.jpg" width ="150px;">
+<p>Leg Press and the Audio Tutorial to Perform</p>
+<audio controls>
+  <source src="Leg Press.mp3" type="audio/mpeg">
+</audio>
+
+	</div>
+	<footer>
+		<p>Copyright &copy; BuildAnyMuscle 2023. All rights Reserveda</p>
+		<p>Made with &hearts; by a Gymrat</p>
+	</footer>
+</body>
+
+</html>
+
+h1{
+	font-family: Montserrat;
+	text-align: center;
+	background-color: black;
+	color: white;
+	padding: 30px;
+}	
+
+hr{
+	border:2px solid black;
+	width: 50%;
+}	
+
+p{
+	font-family: Montserrat;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 25px;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+<a href="paris.jpg">
+  <img src="paris.jpg" alt="Paris">
+</a>
+
+
+.special_para{
+	font-size: 100px;
+}
+header{
+	background-color: skyblue;
+	padding: 20px;
+}
+ul{
+	list-style: none;
+
+}
+
+li{
+	display: inline;
+	margin: 100px;
+}
+
+li a{
+	color: aliceblue;
+	text-decoration: none;
+}
+
+li a:hover {
+	color: indianred;
+}
+footer{
+	background-color: cadetblue;
+	color: whitesmoke;
+	padding: 10px;
+	text-align: center;
+}
+
