@@ -1,0 +1,99 @@
+class Person:
+    def __init__(self, name, age, id):
+        self.name = name
+        self.age = age
+        self.id = id
+
+    def display_info(self):
+        print(f"ID: {self.id}\nName: {self.name}\nAge: {self.age}")
+
+
+class Student(Person):
+    def __init__(self, name, age, student_id, grade):
+        super().__init__(name, age, student_id)
+        self.grade = grade
+
+    def display_info(self):
+        super().display_info()
+        print(f"Grade: {self.grade}")
+
+
+class Teacher(Person):
+    def __init__(self, name, age, teacher_id, subject):
+        super().__init__(name, age, teacher_id)
+        self.subject = subject
+
+    def display_info(self):
+        super().display_info()
+        print(f"Subject: {self.subject}")
+
+
+class SchoolAdmin:
+    def __init__(self):
+        self.students = []
+        self.teachers = []
+
+    def add_student(self, student):
+        self.students.append(student)
+
+    def add_teacher(self, teacher):
+        self.teachers.append(teacher)
+
+    def display_students(self):
+        print("Students:")
+        for student in self.students:
+            student.display_info()
+            print("----------------")
+
+    def display_teachers(self):
+        print("Teachers:")
+        for teacher in self.teachers:
+            teacher.display_info()
+            print("----------------")
+
+
+def main():
+    school_admin = SchoolAdmin()
+
+    while True:
+        print("\nSchool Administration Program")
+        print("1. Add Student")
+        print("2. Add Teacher")
+        print("3. Display Students")
+        print("4. Display Teachers")
+        print("5. Exit")
+
+        choice = input("Enter your choice: ")
+
+        if choice == "1":
+            name = input("Enter student's name: ")
+            age = int(input("Enter student's age: "))
+            student_id = input("Enter student's ID: ")
+            grade = input("Enter student's grade: ")
+            student = Student(name, age, student_id, grade)
+            school_admin.add_student(student)
+
+        elif choice == "2":
+            name = input("Enter teacher's name: ")
+            age = int(input("Enter teacher's age: "))
+            teacher_id = input("Enter teacher's ID: ")
+            subject = input("Enter teacher's subject: ")
+            teacher = Teacher(name, age, teacher_id, subject)
+            school_admin.add_teacher(teacher)
+
+        elif choice == "3":
+            school_admin.display_students()
+
+        elif choice == "4":
+            school_admin.display_teachers()
+
+        elif choice == "5":
+            print("Exiting the program.")
+            break
+
+        else:
+            print("Invalid choice. Please select a valid option.")
+
+
+if __name__ == "__main__":
+    main()
